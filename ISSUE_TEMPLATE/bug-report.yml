@@ -1,0 +1,23 @@
+name: Bug report
+description: Report a problem with spacing, kerning, rendering or metadata
+labels: ["bug"]
+body:
+  - type: input
+    id: typeface
+    attributes:
+      label: Typeface, style and version
+      placeholder: "e.g. Bach Regular 1.000"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Include the text you typed and a screenshot if possible.
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Software and OS
+      placeholder: "e.g. Chrome 130 on macOS 15, InDesign 2026"

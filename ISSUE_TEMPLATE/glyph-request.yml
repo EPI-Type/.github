@@ -1,0 +1,23 @@
+name: Glyph or feature request
+description: Ask for a missing character, script, style or OpenType feature
+labels: ["request"]
+body:
+  - type: input
+    id: typeface
+    attributes:
+      label: Typeface and version
+      placeholder: "e.g. Statik 1.000"
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: What is missing?
+      description: Characters (Unicode code points if possible), language or script, style, or feature.
+    validations:
+      required: true
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Use case
+      description: Where and how would you use it? This helps us prioritise.
